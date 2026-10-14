@@ -48,6 +48,30 @@ Bootcamp ini membahas dasar-dasar data engineering secara bertahap, mulai dari p
 
 Silabus yang menjadi acuan tersedia pada file [Silabus Bootcamp Data Engineering dengan Python](./Silabus%20Bootcamp%20Data%20Engineering%20dengan%20Python%20-%20Silabus%20Original%20%28do%20not%20edit%29.csv).
 
+## Final Project
+
+Final project merupakan proyek individu untuk membangun simulasi data pipeline dari sumber data hingga data siap digunakan di ClickHouse.
+
+### Alur Final Project
+
+1. **Extract** — mengambil data dari file CSV.
+2. **Transform** — membersihkan, mengubah, dan menyiapkan data menggunakan Python.
+3. **Orchestration** — menjadwalkan dan mengatur proses menggunakan Prefect atau Dagster.
+4. **Load** — menyimpan hasil transformasi ke ClickHouse.
+5. **Scheduling** — menjalankan pekerjaan sesuai kebutuhan, misalnya setiap 5 menit, setiap 2 jam, atau setiap hari.
+
+![Flow Final Project](./assets/final-project.jpeg)
+
+_Flow final project: file CSV diproses dengan Python, dijadwalkan oleh sistem orkestrasi, lalu dimuat ke ClickHouse._
+
+### Target Final Project
+
+- Membuat pipeline sederhana dari CSV ke ClickHouse.
+- Melakukan transformasi data menggunakan Python.
+- Menjalankan pipeline secara terjadwal.
+- Menyimpan hasil pipeline ke database analitik.
+- Menyusun laporan dan presentasi hasil project.
+
 ## Cara Menggunakan Repository
 
 1. Masuk ke folder pertemuan yang sedang dipelajari.

@@ -1,0 +1,7 @@
+[
+  {"transaction_id": "TRX-001", "customer": "Andi", "amount": 150000},
+  {"transaction_id": "TRX-002", "customer": "Budi", "amount": 75000},
+  {"transaction_id": "TRX-003", "customer": "Citra", "amount": 225000},
+  {"transaction_id": "TRX-004", "customer": "Dewi", "amount": 100000},
+  {"transaction_id": "TRX-005", "customer": "Eka", "amount": 350000}
+]

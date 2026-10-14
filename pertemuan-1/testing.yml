@@ -1,0 +1,25 @@
+# Menjalankan postgres 15 alpine dan ClickHouse
+
+version: '3.8'
+
+services:
+  database_server:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgresdev
+      - POSTGRES_PASSWORD=adminpass123
+      - POSTGRES_DB=nusacode_db
+    ports:
+      - "5432:5432"
+
+  clickhouse_server:
+    image: clickhouse/clickhouse-server:latest
+    restart: always
+    environment:
+      - CLICKHOUSE_USER=clickhousedev
+      - CLICKHOUSE_PASSWORD=adminpass123
+      - CLICKHOUSE_DB=nusacode_db
+    ports:
+      - "8123:8123"
+      - "9000:9000"

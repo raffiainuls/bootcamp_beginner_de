@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Local Codex / editor metadata
+.commandcode/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Python cache and generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test, coverage, and build cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Generated output folders
+output/
+**/output/
+
+# Local/helper scripts that are not part of the learning materials
+**/generate_slides.js

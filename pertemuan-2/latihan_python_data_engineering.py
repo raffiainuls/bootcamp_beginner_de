@@ -1,5 +1,8 @@
 """Latihan Pertemuan 2: Python untuk Data Engineering.
 
+Dependency tambahan untuk tahap load:
+    pip install clickhouse-connect
+
 Alur latihan:
 1. Menyiapkan data transaksi sederhana.
 2. Membaca contoh file CSV dan JSON.
@@ -9,6 +12,7 @@ Alur latihan:
 6. Filter transaksi.
 7. Menghitung rata-rata transaksi.
 8. Menyimpan hasil transformasi ke CSV.
+9. Menyimpan hasil transformasi ke database ClickHouse.
 """
 
 # Mengimpor Path untuk bekerja dengan lokasi file dan folder.
@@ -18,12 +22,21 @@ from pathlib import Path
 import numpy as np
 # Mengimpor Pandas untuk membuat dan mengolah DataFrame.
 import pandas as pd
+import clickhouse_connect
 
 
 # Menyimpan lokasi folder tempat file script ini berada.
 BASE_DIR = Path(__file__).resolve().parent
 # Menentukan folder data yang berisi file CSV dan JSON.
 DATA_DIR = BASE_DIR / "data"
+
+# Konfigurasi koneksi ClickHouse secara hardcoded agar mudah dipahami pemula.
+CLICKHOUSE_HOST = "localhost"
+CLICKHOUSE_PORT = 8123
+CLICKHOUSE_USER = "clickhousedev"
+CLICKHOUSE_PASSWORD = "adminpass123"
+CLICKHOUSE_DATABASE = "nusacode_db"
+CLICKHOUSE_TABLE = "transaksi_terfilter"
 
 
 # Membuat function untuk menghasilkan data transaksi sederhana.
@@ -68,6 +81,42 @@ def transformasi_data(data: pd.DataFrame) -> tuple[pd.DataFrame, float, int]:
     total = int(np.sum(nilai_transaksi))
     # Mengembalikan data hasil filter, rata-rata, dan total.
     return hasil, rata_rata, total
+
+
+def simpan_ke_clickhouse(data: pd.DataFrame) -> None:
+    """Membuat tabel ClickHouse dan memasukkan hasil transformasi ke dalamnya."""
+    # Membuat client ke database default agar database latihan dapat dibuat jika belum ada.
+    client = clickhouse_connect.get_client(
+        host=CLICKHOUSE_HOST,
+        port=CLICKHOUSE_PORT,
+        username=CLICKHOUSE_USER,
+        password=CLICKHOUSE_PASSWORD,
+    )
+
+    try:
+        # Membuat database latihan jika database tersebut belum tersedia.
+        client.command(f"CREATE DATABASE IF NOT EXISTS {CLICKHOUSE_DATABASE}")
+        # Membuat tabel dengan schema yang sesuai dengan DataFrame hasil transformasi.
+        client.command(
+            f"""
+            CREATE TABLE IF NOT EXISTS {CLICKHOUSE_DATABASE}.{CLICKHOUSE_TABLE}
+            (
+                transaction_id String,
+                customer String,
+                total_transaksi Float64
+            )
+            ENGINE = MergeTree
+            ORDER BY transaction_id
+            """
+        )
+        # Memasukkan baris DataFrame ke tabel ClickHouse.
+        client.insert_df(
+            table=f"{CLICKHOUSE_DATABASE}.{CLICKHOUSE_TABLE}",
+            df=data[["transaction_id", "customer", "total_transaksi"]],
+        )
+    finally:
+        # Menutup koneksi setelah proses load selesai.
+        client.close()
 
 
 # Membuat function utama untuk menjalankan seluruh latihan.
@@ -128,6 +177,14 @@ def main() -> None:
     hasil.to_csv(output_file, index=False)
     # Memberi tahu lokasi file hasil kepada pengguna.
     print(f"Hasil tersimpan di: {output_file}")
+
+    # Menyimpan hasil transformasi ke ClickHouse.
+    simpan_ke_clickhouse(hasil)
+    # Memberi tahu bahwa proses load ke database berhasil.
+    print(
+        f"Hasil juga tersimpan di ClickHouse: "
+        f"{CLICKHOUSE_DATABASE}.{CLICKHOUSE_TABLE}"
+    )
 
 
 # Menjalankan function main hanya ketika file dieksekusi langsung.

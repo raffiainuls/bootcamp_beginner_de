@@ -1,0 +1,188 @@
+id,username,name,email,entity_id,role,status,created_at
+1,user0001,Vina Firmansyah,user0001@contoh.id,1,Supervisor,1,2023-09-20 12:18:10
+2,user0002,Oka Rahardjo,user0002@contoh.id,1,Supervisor,1,2023-09-20 12:18:10
+3,user0003,Fajar Elanga,user0003@contoh.id,2,Admin Gudang,1,2022-11-07 11:59:42
+4,user0004,Yuda Pradana,user0004@contoh.id,2,Admin Gudang,1,2022-11-07 11:59:42
+5,user0005,Joko Gunawan,user0005@contoh.id,3,Admin Gudang,1,2023-08-13 16:13:45
+6,user0006,Gita Baskara,user0006@contoh.id,3,Petugas Logistik,1,2023-08-13 16:13:45
+7,user0007,Joko Santika,user0007@contoh.id,4,Petugas Logistik,1,2024-04-05 08:40:27
+8,user0008,Sari Rahardjo,user0008@contoh.id,4,Petugas Logistik,1,2024-04-05 08:40:27
+9,user0009,Bayu Gunawan,user0009@contoh.id,5,Petugas Logistik,1,2023-09-02 09:47:28
+10,user0010,Laras Baskara,user0010@contoh.id,5,Supervisor,1,2023-09-02 09:47:28
+11,user0011,Kirana Iswara,user0011@contoh.id,6,Admin Gudang,1,2022-06-20 09:34:02
+12,user0012,Laras Nugraha,user0012@contoh.id,6,Petugas Logistik,1,2022-06-20 09:34:02
+13,user0013,Zahra Pradana,user0013@contoh.id,7,Petugas Logistik,1,2023-05-27 10:43:15
+14,user0014,Kirana Firmansyah,user0014@contoh.id,8,Petugas Logistik,1,2023-12-13 09:56:26
+15,user0015,Yuda Rahardjo,user0015@contoh.id,9,Petugas Logistik,1,2023-12-16 08:24:55
+16,user0016,Rizki Iswara,user0016@contoh.id,10,Admin Gudang,1,2023-02-11 12:19:52
+17,user0017,Zahra Nugraha,user0017@contoh.id,10,Admin Gudang,1,2023-02-11 12:19:52
+18,user0018,Nanda Firmansyah,user0018@contoh.id,11,Supervisor,1,2023-06-03 15:25:43
+19,user0019,Joko Kusuma,user0019@contoh.id,12,Admin Gudang,1,2024-04-18 08:38:27
+20,user0020,Citra Kusuma,user0020@contoh.id,13,Supervisor,1,2022-10-15 10:16:02
+21,user0021,Joko Jatmiko,user0021@contoh.id,14,Petugas Logistik,1,2022-05-22 10:23:27
+22,user0022,Umar Nugraha,user0022@contoh.id,14,Admin Gudang,1,2022-05-22 10:23:27
+23,user0023,Yuda Pradana,user0023@contoh.id,15,Petugas Logistik,1,2023-07-16 13:20:25
+24,user0024,Oka Baskara,user0024@contoh.id,16,Supervisor,1,2022-09-05 16:19:25
+25,user0025,Laras Nugraha,user0025@contoh.id,17,Petugas Logistik,1,2022-09-14 12:29:28
+26,user0026,Vina Baskara,user0026@contoh.id,17,Admin Gudang,1,2022-09-14 12:29:28
+27,user0027,Wahyu Mahendra,user0027@contoh.id,18,Petugas Logistik,1,2023-08-11 15:42:40
+28,user0028,Rizki Firmansyah,user0028@contoh.id,19,Admin Gudang,1,2024-05-02 07:15:30
+29,user0029,Eka Pradana,user0029@contoh.id,20,Admin Gudang,1,2023-01-07 13:15:09
+30,user0030,Eka Cendana,user0030@contoh.id,21,Admin Gudang,1,2023-02-07 07:35:15
+31,user0031,Vina Lestari,user0031@contoh.id,22,Petugas Logistik,1,2022-11-02 16:20:48
+32,user0032,Maya Baskara,user0032@contoh.id,22,Supervisor,1,2022-11-02 16:20:48
+33,user0033,Eka Pradana,user0033@contoh.id,23,Petugas Logistik,1,2023-02-22 11:48:15
+34,user0034,Laras Pradana,user0034@contoh.id,24,Admin Gudang,1,2022-05-28 11:15:17
+35,user0035,Tari Elanga,user0035@contoh.id,25,Supervisor,1,2022-06-04 10:04:26
+36,user0036,Laras Mahendra,user0036@contoh.id,26,Petugas Logistik,1,2023-03-24 13:57:49
+37,user0037,Vina Iswara,user0037@contoh.id,26,Admin Gudang,1,2023-03-24 13:57:49
+38,user0038,Dewi Anggara,user0038@contoh.id,27,Supervisor,1,2023-06-02 11:48:24
+39,user0039,Fajar Rahardjo,user0039@contoh.id,27,Supervisor,1,2023-06-02 11:48:24
+40,user0040,Maya Utami,user0040@contoh.id,28,Admin Gudang,1,2023-03-08 14:01:24
+41,user0041,Intan Iswara,user0041@contoh.id,29,Supervisor,1,2022-08-29 15:01:58
+42,user0042,Oka Gunawan,user0042@contoh.id,30,Supervisor,1,2023-02-10 09:03:16
+43,user0043,Joko Rahardjo,user0043@contoh.id,31,Admin Gudang,1,2023-05-05 11:48:53
+44,user0044,Dewi Elanga,user0044@contoh.id,31,Admin Gudang,1,2023-05-05 11:48:53
+45,user0045,Oka Firmansyah,user0045@contoh.id,32,Supervisor,1,2022-08-01 08:49:41
+46,user0046,Oka Cendana,user0046@contoh.id,33,Supervisor,1,2023-12-23 10:08:30
+47,user0047,Kirana Lestari,user0047@contoh.id,34,Supervisor,1,2023-05-16 09:38:38
+48,user0048,Citra Utami,user0048@contoh.id,34,Supervisor,1,2023-05-16 09:38:38
+49,user0049,Joko Jatmiko,user0049@contoh.id,35,Admin Gudang,1,2022-07-04 13:25:45
+50,user0050,Yuda Firmansyah,user0050@contoh.id,36,Petugas Logistik,1,2022-06-27 16:51:07
+51,user0051,Rizki Halim,user0051@contoh.id,37,Admin Gudang,1,2022-12-26 12:00:54
+52,user0052,Gita Elanga,user0052@contoh.id,37,Admin Gudang,1,2022-12-26 12:00:54
+53,user0053,Putri Anggara,user0053@contoh.id,38,Petugas Logistik,1,2022-08-16 14:45:09
+54,user0054,Sari Lestari,user0054@contoh.id,38,Petugas Logistik,1,2022-08-16 14:45:09
+55,user0055,Sari Elanga,user0055@contoh.id,39,Supervisor,1,2023-03-08 16:17:20
+56,user0056,Citra Cendana,user0056@contoh.id,40,Petugas Logistik,1,2022-09-11 13:21:01
+57,user0057,Maya Rahardjo,user0057@contoh.id,41,Supervisor,1,2023-08-15 16:44:56
+58,user0058,Nanda Nugraha,user0058@contoh.id,42,Supervisor,1,2023-01-13 15:48:15
+59,user0059,Citra Elanga,user0059@contoh.id,43,Petugas Logistik,1,2023-07-31 10:25:44
+60,user0060,Vina Cendana,user0060@contoh.id,43,Petugas Logistik,1,2023-07-31 10:25:44
+61,user0061,Oka Santika,user0061@contoh.id,44,Petugas Logistik,1,2022-04-25 15:21:22
+62,user0062,Eka Utami,user0062@contoh.id,45,Supervisor,1,2024-01-26 15:48:44
+63,user0063,Tari Firmansyah,user0063@contoh.id,46,Admin Gudang,1,2023-11-11 11:14:23
+64,user0064,Nanda Santika,user0064@contoh.id,47,Admin Gudang,1,2022-11-08 11:44:08
+65,user0065,Dewi Santika,user0065@contoh.id,48,Admin Gudang,1,2023-03-03 12:11:03
+66,user0066,Joko Firmansyah,user0066@contoh.id,48,Admin Gudang,1,2023-03-03 12:11:03
+67,user0067,Kirana Halim,user0067@contoh.id,49,Petugas Logistik,1,2022-08-22 07:09:09
+68,user0068,Rizki Jatmiko,user0068@contoh.id,50,Admin Gudang,1,2023-05-04 14:58:28
+69,user0069,Intan Gunawan,user0069@contoh.id,51,Supervisor,1,2022-05-01 08:48:13
+70,user0070,Sari Iswara,user0070@contoh.id,52,Admin Gudang,1,2022-11-09 08:10:00
+71,user0071,Vina Jatmiko,user0071@contoh.id,52,Supervisor,1,2022-11-09 08:10:00
+72,user0072,Sari Cendana,user0072@contoh.id,53,Supervisor,1,2022-06-08 14:04:43
+73,user0073,Vina Firmansyah,user0073@contoh.id,54,Supervisor,1,2024-01-31 15:14:41
+74,user0074,Tari Elanga,user0074@contoh.id,55,Admin Gudang,1,2023-07-18 16:47:52
+75,user0075,Wahyu Kusuma,user0075@contoh.id,55,Supervisor,1,2023-07-18 16:47:52
+76,user0076,Bayu Anggara,user0076@contoh.id,56,Admin Gudang,1,2022-11-22 14:28:05
+77,user0077,Bayu Iswara,user0077@contoh.id,57,Supervisor,1,2022-10-04 07:48:43
+78,user0078,Gita Nugraha,user0078@contoh.id,58,Supervisor,1,2023-11-24 16:27:40
+79,user0079,Vina Anggara,user0079@contoh.id,59,Petugas Logistik,1,2022-07-11 08:54:10
+80,user0080,Vina Utami,user0080@contoh.id,59,Petugas Logistik,1,2022-07-11 08:54:10
+81,user0081,Vina Jatmiko,user0081@contoh.id,60,Petugas Logistik,1,2023-04-13 15:02:29
+82,user0082,Hendra Mahendra,user0082@contoh.id,60,Petugas Logistik,1,2023-04-13 15:02:29
+83,user0083,Oka Cendana,user0083@contoh.id,61,Supervisor,1,2023-02-09 13:03:12
+84,user0084,Bayu Firmansyah,user0084@contoh.id,62,Petugas Logistik,1,2022-11-12 09:59:18
+85,user0085,Nanda Rahardjo,user0085@contoh.id,63,Petugas Logistik,1,2023-07-14 15:00:35
+86,user0086,Gita Kusuma,user0086@contoh.id,64,Supervisor,1,2023-02-10 08:41:53
+87,user0087,Eka Kusuma,user0087@contoh.id,64,Supervisor,1,2023-02-10 08:41:53
+88,user0088,Kirana Lestari,user0088@contoh.id,65,Petugas Logistik,1,2023-02-15 15:09:24
+89,user0089,Eka Lestari,user0089@contoh.id,66,Supervisor,1,2022-03-28 13:21:59
+90,user0090,Sari Dirgantara,user0090@contoh.id,67,Petugas Logistik,1,2023-02-25 15:30:22
+91,user0091,Hendra Pradana,user0091@contoh.id,68,Admin Gudang,1,2023-11-16 10:36:24
+92,user0092,Intan Pradana,user0092@contoh.id,68,Admin Gudang,1,2023-11-16 10:36:24
+93,user0093,Eka Dirgantara,user0093@contoh.id,69,Admin Gudang,1,2022-07-18 09:31:02
+94,user0094,Joko Mahendra,user0094@contoh.id,70,Supervisor,1,2022-12-06 14:00:46
+95,user0095,Nanda Halim,user0095@contoh.id,71,Admin Gudang,1,2022-08-28 13:41:05
+96,user0096,Kirana Kusuma,user0096@contoh.id,72,Admin Gudang,1,2022-11-20 07:39:04
+97,user0097,Fajar Rahardjo,user0097@contoh.id,73,Supervisor,1,2022-04-24 08:27:06
+98,user0098,Oka Rahardjo,user0098@contoh.id,73,Petugas Logistik,1,2022-04-24 08:27:06
+99,user0099,Putri Anggara,user0099@contoh.id,74,Admin Gudang,1,2023-08-01 12:23:27
+100,user0100,Maya Santika,user0100@contoh.id,75,Petugas Logistik,1,2023-11-30 08:39:55
+101,user0101,Hendra Gunawan,user0101@contoh.id,76,Supervisor,1,2024-01-02 10:29:40
+102,user0102,Laras Baskara,user0102@contoh.id,76,Admin Gudang,1,2024-01-02 10:29:40
+103,user0103,Joko Rahardjo,user0103@contoh.id,77,Supervisor,1,2023-02-06 11:43:34
+104,user0104,Vina Rahardjo,user0104@contoh.id,77,Petugas Logistik,1,2023-02-06 11:43:34
+105,user0105,Sari Anggara,user0105@contoh.id,78,Admin Gudang,1,2023-02-15 11:12:24
+106,user0106,Nanda Elanga,user0106@contoh.id,79,Petugas Logistik,1,2024-05-05 13:17:00
+107,user0107,Zahra Lestari,user0107@contoh.id,80,Petugas Logistik,1,2023-06-02 10:40:12
+108,user0108,Laras Baskara,user0108@contoh.id,81,Petugas Logistik,1,2024-02-18 07:19:50
+109,user0109,Bayu Utami,user0109@contoh.id,81,Admin Gudang,1,2024-02-18 07:19:50
+110,user0110,Laras Utami,user0110@contoh.id,82,Petugas Logistik,1,2023-11-30 10:08:50
+111,user0111,Citra Mahendra,user0111@contoh.id,83,Supervisor,1,2023-07-30 12:51:07
+112,user0112,Oka Utami,user0112@contoh.id,84,Petugas Logistik,1,2022-11-04 12:05:50
+113,user0113,Umar Dirgantara,user0113@contoh.id,85,Admin Gudang,1,2022-07-09 11:37:24
+114,user0114,Dewi Mahendra,user0114@contoh.id,85,Petugas Logistik,1,2022-07-09 11:37:24
+115,user0115,Kirana Utami,user0115@contoh.id,86,Petugas Logistik,1,2023-10-14 08:40:52
+116,user0116,Eka Gunawan,user0116@contoh.id,87,Supervisor,1,2023-07-21 14:07:06
+117,user0117,Rizki Mahendra,user0117@contoh.id,88,Supervisor,1,2022-04-28 09:56:26
+118,user0118,Bayu Baskara,user0118@contoh.id,89,Admin Gudang,1,2022-06-21 12:13:28
+119,user0119,Eka Kusuma,user0119@contoh.id,90,Petugas Logistik,1,2022-11-17 12:03:25
+120,user0120,Rizki Pradana,user0120@contoh.id,90,Admin Gudang,1,2022-11-17 12:03:25
+121,user0121,Umar Santika,user0121@contoh.id,91,Admin Gudang,1,2024-05-06 07:50:21
+122,user0122,Kirana Kusuma,user0122@contoh.id,92,Admin Gudang,1,2023-10-19 10:21:49
+123,user0123,Maya Jatmiko,user0123@contoh.id,93,Supervisor,1,2023-12-31 09:34:16
+124,user0124,Kirana Santika,user0124@contoh.id,93,Supervisor,1,2023-12-31 09:34:16
+125,user0125,Sari Rahardjo,user0125@contoh.id,94,Supervisor,1,2023-07-01 07:11:16
+126,user0126,Tari Jatmiko,user0126@contoh.id,95,Petugas Logistik,1,2022-03-23 12:32:37
+127,user0127,Adi Lestari,user0127@contoh.id,96,Petugas Logistik,1,2023-07-24 14:41:01
+128,user0128,Wahyu Dirgantara,user0128@contoh.id,97,Petugas Logistik,1,2022-05-29 14:04:57
+129,user0129,Tari Jatmiko,user0129@contoh.id,97,Supervisor,1,2022-05-29 14:04:57
+130,user0130,Yuda Anggara,user0130@contoh.id,98,Supervisor,1,2022-08-27 16:35:45
+131,user0131,Putri Iswara,user0131@contoh.id,98,Supervisor,1,2022-08-27 16:35:45
+132,user0132,Tari Halim,user0132@contoh.id,99,Supervisor,1,2022-06-09 08:54:41
+133,user0133,Bayu Rahardjo,user0133@contoh.id,100,Admin Gudang,1,2023-03-29 08:20:27
+134,user0134,Rizki Mahendra,user0134@contoh.id,101,Admin Gudang,1,2024-02-24 08:05:27
+135,user0135,Wahyu Halim,user0135@contoh.id,102,Admin Gudang,1,2023-04-03 12:55:42
+136,user0136,Tari Dirgantara,user0136@contoh.id,103,Admin Gudang,1,2023-06-02 08:36:32
+137,user0137,Adi Pradana,user0137@contoh.id,103,Petugas Logistik,1,2023-06-02 08:36:32
+138,user0138,Nanda Elanga,user0138@contoh.id,104,Petugas Logistik,1,2022-04-08 11:36:14
+139,user0139,Yuda Gunawan,user0139@contoh.id,105,Petugas Logistik,1,2022-07-24 11:01:11
+140,user0140,Rizki Rahardjo,user0140@contoh.id,106,Supervisor,1,2022-10-26 13:04:09
+141,user0141,Zahra Baskara,user0141@contoh.id,107,Supervisor,1,2023-06-13 09:23:19
+142,user0142,Eka Santika,user0142@contoh.id,107,Admin Gudang,1,2023-06-13 09:23:19
+143,user0143,Sari Kusuma,user0143@contoh.id,108,Supervisor,1,2024-04-07 08:17:28
+144,user0144,Putri Santika,user0144@contoh.id,109,Petugas Logistik,1,2023-06-09 13:07:18
+145,user0145,Kirana Firmansyah,user0145@contoh.id,110,Petugas Logistik,1,2022-09-22 07:00:13
+146,user0146,Sari Kusuma,user0146@contoh.id,110,Supervisor,1,2022-09-22 07:00:13
+147,user0147,Laras Iswara,user0147@contoh.id,111,Supervisor,1,2022-04-24 13:11:08
+148,user0148,Putri Gunawan,user0148@contoh.id,112,Admin Gudang,1,2023-04-17 07:27:01
+149,user0149,Intan Utami,user0149@contoh.id,113,Petugas Logistik,1,2022-06-01 13:18:07
+150,user0150,Hendra Jatmiko,user0150@contoh.id,113,Petugas Logistik,1,2022-06-01 13:18:07
+151,user0151,Yuda Gunawan,user0151@contoh.id,114,Supervisor,1,2023-02-11 12:05:27
+152,user0152,Yuda Rahardjo,user0152@contoh.id,114,Petugas Logistik,1,2023-02-11 12:05:27
+153,user0153,Putri Lestari,user0153@contoh.id,115,Supervisor,1,2023-10-14 12:49:10
+154,user0154,Zahra Iswara,user0154@contoh.id,116,Petugas Logistik,1,2022-05-14 09:15:06
+155,user0155,Dewi Utami,user0155@contoh.id,117,Petugas Logistik,1,2022-03-28 14:29:48
+156,user0156,Maya Lestari,user0156@contoh.id,118,Admin Gudang,1,2023-07-02 12:09:28
+157,user0157,Joko Baskara,user0157@contoh.id,118,Petugas Logistik,1,2023-07-02 12:09:28
+158,user0158,Yuda Cendana,user0158@contoh.id,119,Petugas Logistik,1,2022-12-25 08:19:29
+159,user0159,Oka Iswara,user0159@contoh.id,120,Supervisor,1,2022-09-27 15:24:29
+160,user0160,Putri Gunawan,user0160@contoh.id,121,Admin Gudang,1,2023-12-25 07:28:06
+161,user0161,Sari Iswara,user0161@contoh.id,122,Supervisor,1,2023-03-05 15:33:39
+162,user0162,Yuda Iswara,user0162@contoh.id,123,Admin Gudang,1,2022-03-26 12:43:38
+163,user0163,Dewi Halim,user0163@contoh.id,123,Admin Gudang,1,2022-03-26 12:43:38
+164,user0164,Bayu Santika,user0164@contoh.id,124,Admin Gudang,1,2023-08-11 11:46:54
+165,user0165,Vina Halim,user0165@contoh.id,125,Admin Gudang,1,2022-07-26 13:08:38
+166,user0166,Dewi Nugraha,user0166@contoh.id,126,Petugas Logistik,1,2024-01-18 15:05:41
+167,user0167,Yuda Rahardjo,user0167@contoh.id,126,Admin Gudang,1,2024-01-18 15:05:41
+168,user0168,Wahyu Elanga,user0168@contoh.id,127,Admin Gudang,1,2023-11-13 10:08:09
+169,user0169,Sari Firmansyah,user0169@contoh.id,128,Petugas Logistik,1,2022-04-04 16:08:38
+170,user0170,Vina Rahardjo,user0170@contoh.id,129,Petugas Logistik,1,2022-08-27 09:46:28
+171,user0171,Vina Gunawan,user0171@contoh.id,129,Petugas Logistik,1,2022-08-27 09:46:28
+172,user0172,Kirana Jatmiko,user0172@contoh.id,130,Supervisor,1,2023-02-28 16:18:48
+173,user0173,Bayu Cendana,user0173@contoh.id,130,Supervisor,1,2023-02-28 16:18:48
+174,user0174,Tari Halim,user0174@contoh.id,131,Supervisor,1,2022-07-03 16:28:29
+175,user0175,Zahra Baskara,user0175@contoh.id,132,Admin Gudang,1,2022-09-16 09:55:16
+176,user0176,Nanda Firmansyah,user0176@contoh.id,133,Admin Gudang,1,2024-01-21 11:05:48
+177,user0177,Maya Rahardjo,user0177@contoh.id,134,Admin Gudang,1,2023-03-07 08:58:14
+178,user0178,Zahra Jatmiko,user0178@contoh.id,134,Admin Gudang,1,2023-03-07 08:58:14
+179,user0179,Adi Jatmiko,user0179@contoh.id,135,Supervisor,1,2024-03-05 12:14:01
+180,user0180,Umar Dirgantara,user0180@contoh.id,136,Petugas Logistik,1,2023-01-30 09:48:45
+181,user0181,Joko Pradana,user0181@contoh.id,137,Supervisor,1,2023-12-26 15:46:38
+182,user0182,Sari Santika,user0182@contoh.id,138,Petugas Logistik,1,2023-09-26 13:40:50
+183,user0183,Eka Santika,user0183@contoh.id,138,Petugas Logistik,1,2023-09-26 13:40:50
+184,user0184,Intan Gunawan,user0184@contoh.id,139,Admin Gudang,1,2022-10-17 10:45:09
+185,user0185,Kirana Firmansyah,user0185@contoh.id,140,Supervisor,1,2022-07-17 08:33:23
+186,user0186,Oka Iswara,user0186@contoh.id,141,Supervisor,1,2023-02-01 07:40:24
+187,user0187,Fajar Anggara,user0187@contoh.id,142,Supervisor,1,2022-03-29 16:47:48

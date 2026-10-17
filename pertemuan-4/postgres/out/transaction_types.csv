@@ -1,0 +1,7 @@
+id,name,direction
+1,Penerimaan,1
+2,Pengeluaran,-1
+3,Penyesuaian Tambah,1
+4,Penyesuaian Kurang,-1
+5,Pemusnahan,-1
+10,Pemakaian,-1

@@ -1,0 +1,142 @@
+id,name,level,parent_id,code
+1,Provinsi Arunika,0,,P01
+2,Kota Candisari,1,1,P01R002
+3,Kecamatan Kertarangga,2,2,P01R002D0003
+4,Kecamatan Puspajaya,2,2,P01R002D0004
+5,Kabupaten Wanamukti,1,1,P01R005
+6,Kecamatan Tirtapura,2,5,P01R005D0006
+7,Kecamatan Wanasari,2,5,P01R005D0007
+8,Kecamatan Jatitama,2,5,P01R005D0008
+9,Kabupaten Ranggarangga,1,1,P01R009
+10,Kecamatan Bayusari,2,9,P01R009D0010
+11,Kecamatan Dharmamukti,2,9,P01R009D0011
+12,Kecamatan Candisena,2,9,P01R009D0012
+13,Kecamatan Argasena,2,9,P01R009D0013
+14,Kabupaten Bayuraya,1,1,P01R014
+15,Kecamatan Kertasari,2,14,P01R014D0015
+16,Kecamatan Nusamaya,2,14,P01R014D0016
+17,Kecamatan Wanawangi,2,14,P01R014D0017
+18,Kota Girimukti,1,1,P01R018
+19,Kecamatan Tirtarangga,2,18,P01R018D0019
+20,Kecamatan Dharmatama,2,18,P01R018D0020
+21,Kecamatan Puspawangi,2,18,P01R018D0021
+22,Provinsi Bentala,0,,P22
+23,Kabupaten Girimukti 2,1,22,P22R023
+24,Kecamatan Wanapura,2,23,P22R023D0024
+25,Kecamatan Jatisena,2,23,P22R023D0025
+26,Kota Wanakirana,1,22,P22R026
+27,Kecamatan Puspawangi 2,2,26,P22R026D0027
+28,Kecamatan Candiloka,2,26,P22R026D0028
+29,Kabupaten Girigiri,1,22,P22R029
+30,Kecamatan Girisari,2,29,P22R029D0030
+31,Kecamatan Candirangga,2,29,P22R029D0031
+32,Kecamatan Wanamukti 2,2,29,P22R029D0032
+33,Provinsi Cakrawala,0,,P33
+34,Kota Jatigiri,1,33,P33R034
+35,Kecamatan Selonegara,2,34,P33R034D0035
+36,Kecamatan Jatijaya,2,34,P33R034D0036
+37,Kecamatan Nusakirana,2,34,P33R034D0037
+38,Kabupaten Tirtasari,1,33,P33R038
+39,Kecamatan Nusawangi,2,38,P33R038D0039
+40,Kecamatan Candimaya,2,38,P33R038D0040
+41,Kota Nusasari,1,33,P33R041
+42,Kecamatan Sendangwangi,2,41,P33R041D0042
+43,Kecamatan Dharmagiri,2,41,P33R041D0043
+44,Kecamatan Candigiri,2,41,P33R041D0044
+45,Kecamatan Jatirangga,2,41,P33R041D0045
+46,Kabupaten Candirangga 2,1,33,P33R046
+47,Kecamatan Bayumukti,2,46,P33R046D0047
+48,Kecamatan Seloraya,2,46,P33R046D0048
+49,Kecamatan Jatigiri 2,2,46,P33R046D0049
+50,Kecamatan Sendangmaya,2,46,P33R046D0050
+51,Kabupaten Puspagiri,1,33,P33R051
+52,Kecamatan Mahesena,2,51,P33R051D0052
+53,Kecamatan Bayumukti 2,2,51,P33R051D0053
+54,Kecamatan Wanawangi 2,2,51,P33R051D0054
+55,Kecamatan Selomukti,2,51,P33R051D0055
+56,Provinsi Damaresa,0,,P56
+57,Kabupaten Argajaya,1,56,P56R057
+58,Kecamatan Puspajaya 2,2,57,P56R057D0058
+59,Kecamatan Candisena 2,2,57,P56R057D0059
+60,Kecamatan Nusamaya 2,2,57,P56R057D0060
+61,Kecamatan Bumiwangi,2,57,P56R057D0061
+62,Kota Argarangga,1,56,P56R062
+63,Kecamatan Canditama,2,62,P56R062D0063
+64,Kecamatan Mahetama,2,62,P56R062D0064
+65,Kecamatan Puspakirana,2,62,P56R062D0065
+66,Kecamatan Bumikirana,2,62,P56R062D0066
+67,Kabupaten Ranggagiri,1,56,P56R067
+68,Kecamatan Mahetama 2,2,67,P56R067D0068
+69,Kecamatan Argamukti,2,67,P56R067D0069
+70,Kecamatan Nusaloka,2,67,P56R067D0070
+71,Kota Girikirana,1,56,P56R071
+72,Kecamatan Jatipura,2,71,P56R071D0072
+73,Kecamatan Jatimukti,2,71,P56R071D0073
+74,Kecamatan Wanamaya,2,71,P56R071D0074
+75,Provinsi Eldira,0,,P75
+76,Kabupaten Wanasena,1,75,P75R076
+77,Kecamatan Kertagiri,2,76,P75R076D0077
+78,Kecamatan Sendangtama,2,76,P75R076D0078
+79,Kecamatan Mahenegara,2,76,P75R076D0079
+80,Kecamatan Bayusari 2,2,76,P75R076D0080
+81,Kabupaten Ranggarangga 2,1,75,P75R081
+82,Kecamatan Selojaya,2,81,P75R081D0082
+83,Kecamatan Giriloka,2,81,P75R081D0083
+84,Kecamatan Dharmamaya,2,81,P75R081D0084
+85,Kota Wanaraya,1,75,P75R085
+86,Kecamatan Jatimukti 2,2,85,P75R085D0086
+87,Kecamatan Jatipura 2,2,85,P75R085D0087
+88,Kota Tirtasari 2,1,75,P75R088
+89,Kecamatan Tirtakirana,2,88,P75R088D0089
+90,Kecamatan Nusamaya 3,2,88,P75R088D0090
+91,Kabupaten Candijaya,1,75,P75R091
+92,Kecamatan Ranggatama,2,91,P75R091D0092
+93,Kecamatan Kertarangga 2,2,91,P75R091D0093
+94,Kecamatan Sendangsari,2,91,P75R091D0094
+95,Provinsi Fajarloka,0,,P95
+96,Kabupaten Ranggamaya,1,95,P95R096
+97,Kecamatan Bayuraya 2,2,96,P95R096D0097
+98,Kecamatan Bayuwangi,2,96,P95R096D0098
+99,Kabupaten Tirtajaya,1,95,P95R099
+100,Kecamatan Puspapura,2,99,P95R099D0100
+101,Kecamatan Selorangga,2,99,P95R099D0101
+102,Kecamatan Nusasena,2,99,P95R099D0102
+103,Kecamatan Puspasari,2,99,P95R099D0103
+104,Kota Dharmagiri 2,1,95,P95R104
+105,Kecamatan Mahenegara 2,2,104,P95R104D0105
+106,Kecamatan Dharmasari,2,104,P95R104D0106
+107,Kecamatan Wanaloka,2,104,P95R104D0107
+108,Kabupaten Puspapura 2,1,95,P95R108
+109,Kecamatan Argamaya,2,108,P95R108D0109
+110,Kecamatan Jatigiri 3,2,108,P95R108D0110
+111,Kecamatan Bayuloka,2,108,P95R108D0111
+112,Kecamatan Sendangsari 2,2,108,P95R108D0112
+113,Provinsi Girimaya,0,,P113
+114,Kabupaten Mahewangi,1,113,P113R114
+115,Kecamatan Selonegara 2,2,114,P113R114D0115
+116,Kecamatan Dharmanegara,2,114,P113R114D0116
+117,Kabupaten Sendanggiri,1,113,P113R117
+118,Kecamatan Bumisari,2,117,P113R117D0118
+119,Kecamatan Tirtamukti,2,117,P113R117D0119
+120,Kabupaten Tirtarangga 2,1,113,P113R120
+121,Kecamatan Tirtapura 2,2,120,P113R120D0121
+122,Kecamatan Sendangtama 2,2,120,P113R120D0122
+123,Kecamatan Mahepura,2,120,P113R120D0123
+124,Kabupaten Wanakirana 2,1,113,P113R124
+125,Kecamatan Wanamukti 3,2,124,P113R124D0125
+126,Kecamatan Wanajaya,2,124,P113R124D0126
+127,Provinsi Hanadira,0,,P127
+128,Kabupaten Jatimukti 3,1,127,P127R128
+129,Kecamatan Tirtamukti 2,2,128,P127R128D0129
+130,Kecamatan Wanawangi 3,2,128,P127R128D0130
+131,Kecamatan Nusanegara,2,128,P127R128D0131
+132,Kecamatan Ranggajaya,2,128,P127R128D0132
+133,Kabupaten Jatinegara,1,127,P127R133
+134,Kecamatan Kertajaya,2,133,P127R133D0134
+135,Kecamatan Bumiloka,2,133,P127R133D0135
+136,Kecamatan Nusasena 2,2,133,P127R133D0136
+137,Kabupaten Argaloka,1,127,P127R137
+138,Kecamatan Puspamaya,2,137,P127R137D0138
+139,Kecamatan Ranggatama 2,2,137,P127R137D0139
+140,Kecamatan Candigiri 2,2,137,P127R137D0140
+141,Kecamatan Girimaya,2,137,P127R137D0141

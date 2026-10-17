@@ -1,0 +1,6 @@
+id,name,code
+1,Gudang Pusat,PUSAT
+2,Gudang Provinsi,PROV
+3,Gudang Kabupaten/Kota,KABKOTA
+4,Fasilitas Pelayanan,FASYANKES
+5,Distributor,VENDOR

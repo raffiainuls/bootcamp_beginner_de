@@ -1,0 +1,14 @@
+id,transaction_type_id,name
+1,1,Penerimaan Pengadaan
+2,1,Penerimaan Distribusi
+3,1,Penerimaan Pengembalian
+4,2,Distribusi Rutin
+5,2,Distribusi Darurat
+6,2,Pengembalian ke Gudang Asal
+7,3,Koreksi Stok Opname Lebih
+8,4,Koreksi Stok Opname Kurang
+9,5,Kedaluwarsa
+10,5,Rusak / VVM
+11,5,Hilang
+12,10,Pemakaian Pelayanan
+13,10,Sisa Vial Terbuang

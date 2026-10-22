@@ -1,0 +1,12 @@
+dbt_clickhouse_project:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: default
+      host: localhost
+      port: 8123
+      user: clickhousedev
+      password: adminpass123
+      secure: false
+      threads: 2

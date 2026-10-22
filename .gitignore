@@ -10,6 +10,7 @@ venv/
 env/
 .env/
 
+
 # Python cache and generated files
 __pycache__/
 *.py[cod]
@@ -36,3 +37,8 @@ output/
 
 # Local/helper scripts that are not part of the learning materials
 **/generate_slides.js
+
+# dbt generated artifacts
+**/dbt_project/target/
+**/dbt_project/logs/
+**/dbt_project/.user.yml

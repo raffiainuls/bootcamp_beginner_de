@@ -1,0 +1,8 @@
+name: dbt_clickhouse_project
+version: '1.0.0'
+config-version: 2
+profile: dbt_clickhouse_project
+model-paths: [models]
+models:
+  dbt_clickhouse_project:
+    +materialized: view

@@ -1,0 +1,27 @@
+tables:
+  - source_table: bootcamp.orders
+    columns:
+      - id
+      - no_document
+      - customer_id
+      - vendor_id
+      - total_order_items
+      - created_at
+    order_by: id
+    target_database: staging
+    target_table: raw_orders
+    schema_file: schema/clickhouse_raw_orders.sql
+
+  - source_table: bootcamp.entities
+    columns:
+      - id
+      - code
+      - name
+      - entity_type_id
+      - is_vendor
+      - status
+      - created_at
+    order_by: id
+    target_database: staging
+    target_table: raw_entities
+    schema_file: schema/clickhouse_raw_entities.sql

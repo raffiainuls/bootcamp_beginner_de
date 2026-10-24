@@ -4,9 +4,10 @@ dbt_clickhouse_project:
     dev:
       type: clickhouse
       schema: default
-      host: localhost
-      port: 8123
-      user: clickhousedev
-      password: adminpass123
+      host: "{{ env_var('CH_HOST', 'localhost') }}"
+      port: "{{ env_var('CH_PORT', '8123') | int }}"
+      user: "{{ env_var('CH_USER', 'clickhousedev') }}"
+      password: "{{ env_var('CH_PASSWORD', 'adminpass123') }}"
       secure: false
       threads: 2
+

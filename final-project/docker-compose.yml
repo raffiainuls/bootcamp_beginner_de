@@ -1,0 +1,93 @@
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    container_name: youtube-trend-clickhouse
+    environment:
+      CLICKHOUSE_USER: clickhousedev
+      CLICKHOUSE_PASSWORD: adminpass123
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    ports:
+      - "18123:8123"
+      - "19000:9000"
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+    healthcheck:
+      test: ["CMD-SHELL", "clickhouse-client --query 'SELECT 1'"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  dagster-webserver:
+    build:
+      context: .
+      dockerfile: orchestration/Dockerfile
+    container_name: youtube-trend-dagster-webserver
+    command: >-
+      dagster-webserver -h 0.0.0.0 -p 3000
+      -w /workspace/final-project/orchestration/workspace.yaml
+    environment:
+      DAGSTER_HOME: /opt/dagster/dagster_home
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: "8123"
+      CLICKHOUSE_USER: clickhousedev
+      CLICKHOUSE_PASSWORD: adminpass123
+    ports:
+      - "13000:3000"
+    volumes:
+      - .:/workspace/final-project
+      - dagster_home:/opt/dagster/dagster_home
+      - ./orchestration/dagster.yaml:/opt/dagster/dagster_home/dagster.yaml:ro
+    depends_on:
+      clickhouse:
+        condition: service_healthy
+
+  dagster-daemon:
+    build:
+      context: .
+      dockerfile: orchestration/Dockerfile
+    container_name: youtube-trend-dagster-daemon
+    command: >-
+      dagster-daemon run
+      -w /workspace/final-project/orchestration/workspace.yaml
+    environment:
+      DAGSTER_HOME: /opt/dagster/dagster_home
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: "8123"
+      CLICKHOUSE_USER: clickhousedev
+      CLICKHOUSE_PASSWORD: adminpass123
+    volumes:
+      - .:/workspace/final-project
+      - dagster_home:/opt/dagster/dagster_home
+      - ./orchestration/dagster.yaml:/opt/dagster/dagster_home/dagster.yaml:ro
+    depends_on:
+      clickhouse:
+        condition: service_healthy
+      dagster-webserver:
+        condition: service_started
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard/Dockerfile
+    container_name: youtube-trend-dashboard
+    environment:
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: "8123"
+      CLICKHOUSE_USER: clickhousedev
+      CLICKHOUSE_PASSWORD: adminpass123
+    ports:
+      - "18080:8000"
+    volumes:
+      - ./dashboard:/app/dashboard
+    depends_on:
+      clickhouse:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  clickhouse_data:
+  dagster_home:

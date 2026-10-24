@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_youtube_trending
+    description: "Cleaned and typed YouTube trending snapshots in WIB."
+    columns:
+      - name: video_id
+        tests: [not_null]
+      - name: trending_date
+        tests: [not_null]
+      - name: category_id
+        tests: [not_null]
+      - name: view_count
+        tests: [not_null]
+  - name: stg_season_calendar
+    columns:
+      - name: season_name
+        tests: [not_null]
+  - name: mart_daily_category_trends
+    columns:
+      - name: trending_date
+        tests: [not_null]
+      - name: category_id
+        tests: [not_null]

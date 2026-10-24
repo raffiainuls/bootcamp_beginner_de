@@ -1,0 +1,12 @@
+youtube_trend_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: default
+      host: "{{ env_var('CLICKHOUSE_HOST', 'localhost') }}"
+      port: "{{ env_var('CLICKHOUSE_PORT', '18123') | int }}"
+      user: "{{ env_var('CLICKHOUSE_USER', 'clickhousedev') }}"
+      password: "{{ env_var('CLICKHOUSE_PASSWORD', 'adminpass123') }}"
+      secure: false
+      threads: 2

@@ -1,0 +1,17 @@
+services:
+  kestra:
+    image: kestra/kestra:latest-slim
+    command: server local
+    user: root
+    ports:
+      - "8080:8080"
+    volumes:
+      - kestra_data:/app/storage
+      - kestra_db:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp:/tmp
+
+volumes:
+  kestra_data:
+  kestra_db:
+

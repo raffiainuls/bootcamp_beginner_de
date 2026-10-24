@@ -1,0 +1,4 @@
+load_from:
+  - python_file:
+      relative_path: definitions.py
+      location_name: youtube_trending_final_project

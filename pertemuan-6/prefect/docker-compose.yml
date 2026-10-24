@@ -1,0 +1,49 @@
+services:
+  prefect-server:
+    build:
+      context: ../..
+      dockerfile: pertemuan-6/prefect/Dockerfile
+    command: prefect server start --host 0.0.0.0 --port 4200
+    ports:
+      - "4200:4200"
+    environment:
+      PREFECT_SERVER_ANALYTICS_ENABLED: "false"
+      PREFECT_API_URL: http://prefect-server:4200/api
+      PREFECT_SERVER_UI_API_URL: http://localhost:4200/api
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://localhost:4200/api/health')
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - prefect_data:/root/.prefect
+
+  prefect-flow:
+    build:
+      context: ../..
+      dockerfile: pertemuan-6/prefect/Dockerfile
+    command: python pertemuan-6/prefect/prefect_pipeline.py --serve
+    environment:
+      PREFECT_API_URL: http://prefect-server:4200/api
+      PGHOST: host.docker.internal
+      PGPORT: "5433"
+      PGDATABASE: nusacode_db
+      PGUSER: postgresdev
+      PGPASSWORD: adminpass123
+      CH_HOST: host.docker.internal
+      CH_PORT: "8123"
+      CH_USER: clickhousedev
+      CH_PASSWORD: adminpass123
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      prefect-server:
+        condition: service_healthy
+
+volumes:
+  prefect_data:
+

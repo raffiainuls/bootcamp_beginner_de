@@ -1,0 +1,24 @@
+id: pertemuan_6_elt
+namespace: nusacodes.bootcamp
+description: Menjalankan pipeline ELT Pertemuan 5 dengan Docker Task Runner.
+
+tasks:
+  - id: run_elt_pipeline
+    type: io.kestra.plugin.scripts.shell.Commands
+    containerImage: nusacodes/p6-elt-runner:local
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+      pullPolicy: IF_NOT_PRESENT
+      cpu:
+        cpus: 1
+      memory:
+        memory: 1Gb
+    commands:
+      - cd /workspace && bash pertemuan-5/run_pipeline.sh
+
+triggers:
+  - id: every_5_minutes
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "*/5 * * * *"
+    timezone: Asia/Jakarta
+

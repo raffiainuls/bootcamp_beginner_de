@@ -1,0 +1,15 @@
+# Pertemuan 2–3: pengolahan data dan notebook
+numpy>=2.0,<3
+pandas>=2.0,<3
+jupyter>=1.0,<2
+ipykernel>=6.0,<7
+
+# Pertemuan 4–5: PostgreSQL, ClickHouse, dan konfigurasi pipeline
+psycopg2-binary>=2.9,<3
+clickhouse-connect>=0.7,<1
+python-dotenv>=1.0,<2
+PyYAML>=6.0,<7
+
+# Pertemuan 5: transformasi dengan dbt di ClickHouse
+dbt-core>=1.8,<2
+dbt-clickhouse>=1.8,<2

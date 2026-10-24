@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: bronze
+    schema: bronze
+    tables:
+      - name: raw_youtube_trending
+        columns:
+          - name: video_id
+            tests: [not_null]
+      - name: raw_category_master
+        columns:
+          - name: category_id
+            tests: [not_null, unique]
+      - name: raw_season_calendar
+        columns:
+          - name: season_name
+            tests: [not_null]

@@ -41,7 +41,7 @@ Bootcamp ini membahas dasar-dasar data engineering secara bertahap, mulai dari p
 | 3 | Data Cleaning & Transformation | [README Pertemuan 3](./pertemuan-3/README.md) |
 | 4 | Database & SQL Integration | [README Pertemuan 4](./pertemuan-4/README.md) |
 | 5 | Data Pipeline Automation | [README Pertemuan 5](./pertemuan-5/README.md) |
-| 6 | Advanced ETL & Final Project Briefing | [README Pertemuan 6](./pertemuan-6/README.md) |
+| 6 | Orkestrasi dan Scheduler Pipeline ELT | [README Pertemuan 6](./pertemuan-6/README.md) |
 | 7 | Presentasi Final Project & Best Practices | [README Pertemuan 7](./pertemuan-7/README.md) |
 
 > Topik pertemuan dapat disesuaikan dengan silabus dan pelaksanaan bootcamp.
@@ -78,6 +78,19 @@ _Flow final project: file CSV diproses dengan Python, dijadwalkan oleh sistem or
 2. Baca README pada folder tersebut.
 3. Simpan script, query, dataset kecil, dan hasil latihan di folder pertemuan terkait.
 4. Perbarui README dengan progres, kendala, dan hasil belajar.
+
+## Instalasi Dependency Pertemuan 1–5
+
+Seluruh library Python yang diperlukan untuk Pertemuan 1–5 dikumpulkan di [requirements.txt](./requirements.txt):
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate       # macOS/Linux
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Pertemuan 1 dan sebagian latihan dasar Pertemuan 2–4 memakai standard library Python atau SQL/Docker, sehingga tidak membutuhkan paket tambahan.
 
 ## Teknologi yang Digunakan
 

@@ -1,0 +1,10 @@
+season_name,start_date,end_date,notes
+Election 2024,2024-02-01,2024-02-29,Window around Indonesian legislative and presidential election
+Ramadan 2023,2023-03-22,2023-04-22,Approximate analysis window; adjust to the chosen calendar authority
+Ramadan 2024,2024-03-10,2024-04-11,Approximate analysis window; adjust to the chosen calendar authority
+Ramadan 2025,2025-02-27,2025-03-31,Approximate analysis window; adjust to the chosen calendar authority
+Ramadan 2026,2026-02-16,2026-03-21,Approximate analysis window; adjust to the chosen calendar authority
+Year-end holidays,2022-12-15,2023-01-10,Year-end and New Year window
+Year-end holidays,2023-12-15,2024-01-10,Year-end and New Year window
+Year-end holidays,2024-12-15,2025-01-10,Year-end and New Year window
+Year-end holidays,2025-12-15,2026-01-10,Year-end and New Year window

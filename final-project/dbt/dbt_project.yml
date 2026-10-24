@@ -1,0 +1,14 @@
+name: youtube_trend_analytics
+version: "1.0.0"
+config-version: 2
+profile: youtube_trend_analytics
+model-paths: [models]
+test-paths: [tests]
+models:
+  youtube_trend_analytics:
+    silver:
+      +schema: silver
+      +materialized: table
+    gold:
+      +schema: gold
+      +materialized: table
